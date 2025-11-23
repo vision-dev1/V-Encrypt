@@ -89,6 +89,9 @@ This tool is intended for legitimate security purposes only. The author, Vision 
 
 By using this tool, you agree to use it ethically and legally, respecting the privacy and rights of others.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ## Author
 
 **Vision KC**
