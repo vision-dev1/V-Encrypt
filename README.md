@@ -1,6 +1,6 @@
 # V-Encrypt
 
-A secure file encryption tool developed by Vision KC.
+A secure file encryption tool.
 
 ## Description
 
@@ -96,6 +96,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Vision KC**
 - GitHub: [vision-dev1](https://github.com/vision-dev1)
-- Website: [visionkc.com.np](https://visionkc.com.np)
-
-Made By Vision | Designed by Vision
