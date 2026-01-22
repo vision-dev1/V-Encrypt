@@ -1,20 +1,22 @@
 # V-Encrypt
 
-A secure file encryption tool.
+![Kali Linux](https://img.shields.io/badge/Kali-Linux-557C94?logo=kali-linux&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![Cryptography](https://img.shields.io/badge/Security-Cryptography-red)
 
-## Description
+## Overview
 
-V-Encrypt is a Python-based encryption software that uses AES-256 encryption to securely encrypt and decrypt files. It supports both password-based encryption and keyfile-based encryption methods.
+V-Encrypt enables reliable file encryption and decryption using AES-256 in GCM mode, ensuring both confidentiality and integrity. It supports password-based encryption as well as keyfile-based encryption, making it suitable for personal use, secure file storage, and learning applied cryptography.
 
 ## Features
 
-- AES-256 encryption with GCM mode for authenticated encryption
+- AES-256-GCM authenticated encryption
 - Password-based encryption using PBKDF2 key derivation
-- Automatic key generation for keyfile-based encryption
-- Secure storage of metadata (filename, salt, nonce) in encrypted file header
-- Automatic restoration of original file format during decryption
-- Support for encrypting any file type
-- Clean terminal interface with informative messages
+- Secure keyfile-based encryption with automatic key generation
+- Encrypted file header storing required metadata (filename, salt, nonce, authentication tag)
+- Automatic restoration of the original filename and file type during decryption
+- Supports encryption of any file format
+- Simple and informative command-line interface
 
 ## Installation
 
@@ -85,14 +87,17 @@ V-Encrypt uses industry-standard cryptographic practices:
 
 ## Ethical Use Disclaimer
 
-This tool is intended for legitimate security purposes only. The author, Vision KC, provides this software "as is" without warranty of any kind. Users are solely responsible for ensuring compliance with all applicable laws and regulations. The developer assumes no liability for misuse of this software.
-
+This software is intended strictly for legitimate and ethical security purposes.
+The author, Vision KC, provides this project “as is”, without any warranty. Users are solely responsible for ensuring compliance with applicable laws and regulations. The author assumes no liability for misuse, damage, or unlawful use of this software.
+By using V-Encrypt, you agree to use it responsibly and ethically.
 By using this tool, you agree to use it ethically and legally, respecting the privacy and rights of others.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## Author
 
 **Vision KC**
-- GitHub: [vision-dev1](https://github.com/vision-dev1)
+- [Github](https://github.com/vision-dev1)
+- [Portfolio](https://visionkc.com.np)
