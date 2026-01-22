@@ -27,17 +27,15 @@ Examples:
         """
     )
     
-    subparsers = parser.add_subparsers(dest='command', help='Available commands')
+    subparsers = parser.add_subparsers(dest='command')
     
-    # Encrypt subcommand
-    encrypt_parser = subparsers.add_parser('encrypt', help='Encrypt a file')
-    encrypt_parser.add_argument('input_file', help='File to encrypt')
-    encrypt_parser.add_argument('--password', '-p', help='Password for encryption (if not provided, a keyfile will be generated)')
+    encrypt_parser = subparsers.add_parser('encrypt')
+    encrypt_parser.add_argument('input_file')
+    encrypt_parser.add_argument('--password', '-p')
     
-    # Decrypt subcommand
-    decrypt_parser = subparsers.add_parser('decrypt', help='Decrypt a file')
-    decrypt_parser.add_argument('input_file', help='File to decrypt (.venc)')
-    decrypt_parser.add_argument('--password', '-p', help='Password for decryption')
+    decrypt_parser = subparsers.add_parser('decrypt')
+    decrypt_parser.add_argument('input_file')
+    decrypt_parser.add_argument('--password', '-p')
     
     args = parser.parse_args()
     
@@ -45,7 +43,6 @@ Examples:
         parser.print_help()
         return
     
-    # Validate input file
     if not validate_file(args.input_file):
         print(f"Error: File '{args.input_file}' does not exist or is not accessible.")
         sys.exit(1)
