@@ -1,5 +1,4 @@
 """
-V-Encrypt Core Encryption/Decryption Module
 Author: Vision KC
 GitHub: github.com/vision-dev1
 """
